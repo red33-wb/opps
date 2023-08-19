@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    visibility: hidden;
+    
+}
+
+h1{
+    display: flex;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: polash 1s infinite;
+}
+
+@keyframes polash{
+    25%{color: red;}
+    50%{color: cadetblue;}
+    75%{color: yellowgreen;}
+    100%{color: cornflowerblue;}
+}
+
+
+h2{
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: pola 1s infinite;
+    font-size: 30px;
+    margin-top: 20px;
+    
+}
+
+.line{
+    width: 5px;
+    height: 100px;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 49px;
+    animation: rotone 1s infinite;
+}
+
+
+
+
+
+@keyframes rotone{
+    25%{background-color: brown;
+    transform: rotate(360deg);}
+}
+
+
+.line2{
+    width: 5px;
+    height: 100px;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 49px;
+    animation: rotone2 1s infinite;
+    
+}
+
+
+@keyframes rotone2{
+    25%{background-color: rgb(228, 228, 14);
+    transform: rotate(-360deg);}
+}
+@keyframes pola{
+    25%{margin-left: 100px;}
+    50%{margin-right: 100px;}
+}
+
+
+
+button{
+    width: 136px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(180, 180, 3);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkgoldenrod;
+    color: rgb(0, 215, 223);
+}
+
+body{
+    background-color: #000000;
+}
